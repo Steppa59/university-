@@ -4,9 +4,8 @@ using namespace std;
 int main()
 {
 int a, b, c;
-
-cout « " Vvedite 3 chisla ";
-cin » a » b » c;
+cout << " Vvedite 3 4isla: ";
+cin >> a >> b >> c;
 
 int min = a;
 int max = a;
@@ -23,8 +22,8 @@ max = b;
 if (c > max) {
 max = c;
 }
-cout « "Max: " « max ;
-cout « "Min: " « min;
+cout << "Max: " << max << "  " ;
+cout << "Min: " << min;
 
 return 0;
 } 
