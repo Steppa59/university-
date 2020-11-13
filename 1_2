@@ -1,0 +1,30 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+
+float a, b, c;
+
+cout « "введите 2числа";
+cin » a » b;
+
+if (b == 0){
+cout « "Na 0 delit nelzya "« endl;
+}
+
+if (a == 0){
+c = 0;
+cout « c;
+}
+
+if (a!=0)&&(b!=0){
+c = a/b;
+cout « "Ravno: " « c ;
+}
+
+
+return 0;
+} 
