@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int n;
+cout << "Введите количество элементов: ";
+cin >> n;
+cout << endl;
+cout << "Введите элементы последовательности: ";
+cout << endl;
+    
+bool flag;
+int a;
+cin >> a;
+int b;
+for (int i=1; i<=n-1; i++) {
+    cin >> b;
+}
+    if (a==0) {
+    flag=false;
+    }
+    
+    if (a>0){
+    cout << "Последовательность начинается с положительного числа";
+    flag=true;
+    }
+    
+    if (a<0){
+    cout << "Последовательность начинается с отрицательного числа";
+    flag=true;
+    }
+    
+    if (flag == false) {
+    cout << "Последовательность начинается с нуля";
+    }
+    return 0;
+}
