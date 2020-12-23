@@ -1,0 +1,32 @@
+#include <iostream> 
+#include <cmath>
+using namespace std;
+
+int main()
+{
+
+int n;
+cout << "Введите количество элементов: ";
+cin >> n;
+float z;
+cout << "Введите число которое нужно найти: ";
+cin >> z;
+
+bool flag=false;
+int sum=0;
+for (int i=1; i<n; i++){
+if (sin(n+i/n)==z){
+flag=true;
+}
+}
+
+if (flag==true){
+cout << "Введенное число присутсвует";
+}   
+else
+{
+cout << "Введенное число не присутсвует";
+}
+
+return 0;
+}
