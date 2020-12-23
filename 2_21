@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int n,k;
+int a[500];
+bool flag=false;
+cout << "Введите числа: ";
+for (int i=1; 500; i++) {
+cin >> a[i];
+k++;
+if (a[i]==0)
+{
+break;
+}
+}
+
+for (int i=2; i<k; i++){
+if(a[i-1]<=a[i])
+{
+flag=true;
+}
+}
+
+if (flag==true){
+cout << "Последовательность упорядочена ";
+}
+else{
+cout << "Последовательность не упорядочена";
+}
+return 0;
+}
