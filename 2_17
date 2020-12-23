@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+float proiz,x,f;
+int n,i;
+int main() {
+proiz=1;
+f=1;
+
+cout << "Введите длину последовательности: ";
+cin >> n;
+
+cout << "Введите значения переменной X: ";
+cin >> x;
+
+
+if (n==0){
+proiz=0;
+goto skip;
+}
+
+for (int i=1; i<=n; i++) {
+f = f*i;
+proiz = proiz * pow(x,i)/f;
+
+}
+
+skip:
+cout << "Сумма последовательности равна: " << proiz; 
+return 0;
+}
