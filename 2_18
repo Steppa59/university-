@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int n;
+cout << "Введите число N: ";
+cin >> n;
+
+int a=0;
+while (n>0) {
+a = a + (n%10);
+a = a*10;
+n=n/10;      
+}
+cout << "Число N в обратно поярдке: "<< a/10;
+return 0;
+}
