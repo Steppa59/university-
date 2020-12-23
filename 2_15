@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string> 
+
+using namespace std;
+
+int main()
+{
+    
+int n,z;
+cout << "Введите число: ";
+cin >> n;
+cout << "Введите цифру которую нужно найти : ";
+cin >> z;
+bool flag=false;
+
+while (n>0) {
+if (n%10==z){
+flag=true;
+}
+n = n/10;
+}
+
+if (flag==true) {
+cout <<  "Введенная цифра входит в запись числа! ";
+}
+else {
+cout <<  "Введенная цифра не входит в запись числа! ";
+}
+return 0;
+}
